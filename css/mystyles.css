@@ -1,0 +1,399 @@
+/* my styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Futura, Arial, Helvetica, sans-serif;
+}
+
+.jumbotron {
+	background-image: url(../img/backgrounds/congruent_pentagon_blue.png);
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: 50%;
+	text-align: center;
+}
+
+.jumbotron-title p {
+	color: white;
+	text-shadow: 1px 4px 4px #151515;
+}
+
+/* match Github color scheme */
+.navbar-github {
+	background: #e5e5e5;
+}
+
+/* for checkbox effect */
+.sidebar_checkbox {
+	font-family: Monospace;
+	text-align: start;
+}
+
+/* for checkbox effect */
+.fa-github-alt {
+	transition: opacity 0.5s;
+}
+
+/* for checkbox effect */
+.opaque {
+	opacity: 0;
+}
+
+/* transform bootstrap image to background */
+.card-img-top {
+	color: transparent; /* clever way to keep alt text for screen readers, but transparent for viewers */
+	max-width: 100%;
+	width: 100%;
+	height: 10em;
+	background-position: 50%;
+	background-size: cover;
+	background-attachment:;
+}
+
+.card:first-of-type .card-img-top {
+	background-image: url(../img/modals/gh00_install_commandline_tools.png);
+}
+
+.card:nth-of-type(2) .card-img-top {
+	background-image: url(../img/modals/gh01_project_filepath.png);
+}
+
+.card:nth-of-type(3) .card-img-top {
+	background-image: url(../img/modals/gh02_find_index.png);
+}
+
+.card:nth-of-type(4) .card-img-top {
+	background-image: url(../img/modals/gh03_git_init.png);
+}
+
+.card:nth-of-type(5) .card-img-top {
+	background-image: url(../img/modals/gh04_git_status.png);
+}
+
+.card:nth-of-type(6) .card-img-top {
+	background-image: url(../img/modals/gh05_git_add.png);
+}
+
+.card:nth-of-type(7) .card-img-top {
+	background-image: url(../img/modals/gh06_git_status.png);
+}
+
+.card:nth-of-type(8) .card-img-top {
+	background-image: url(../img/modals/gh07_git_commit.png);
+}
+
+.card:nth-of-type(9) .card-img-top {
+	background-image: url(../img/modals/gh08_new_repository.png);
+}
+
+.card:nth-of-type(10) .card-img-top {
+	background-image: url(../img/modals/gh09_name_repository.png);
+}
+
+.card:nth-of-type(11) .card-img-top {
+	background-image: url(../img/modals/gh10_create_repository.png);
+}
+
+.card:nth-of-type(12) .card-img-top {
+	background-image: url(../img/modals/gh11_copy_commands.png);
+}
+
+.card:nth-of-type(13) .card-img-top {
+	background-image: url(../img/modals/gh12_paste_commands.png);
+}
+
+.card:nth-of-type(14) .card-img-top {
+	background-image: url(../img/modals/gh13_click_repository.png);
+}
+
+.card:nth-of-type(15) .card-img-top {
+	background-image: url(../img/modals/gh14_see_project.png);
+}
+
+.card:nth-of-type(16) .card-img-top {
+	background-image: url(../img/modals/gh15_branch_gh-pags.png);
+}
+
+.card:nth-of-type(17) .card-img-top {
+	background-image: url(../img/modals/gh16_git_branch_ls.png);
+}
+
+.card:nth-of-type(18) .card-img-top {
+	background-image: url(../img/modals/gh17_git_push_origin_gh-pages.png);
+}
+
+.card:nth-of-type(19) .card-img-top {
+	background-image: url(../img/modals/gh18_gh-pages_branch.png);
+}
+
+.card:nth-of-type(20) .card-img-top {
+	background-image: url(../img/modals/gh19_built_site.png);
+}
+
+.card:nth-of-type(21) .card-img-top {
+	background-image: url(../img/modals/gh20_update_branch.png);
+}
+
+.card:nth-of-type(22) .card-img-top {
+	background-image: url(../img/modals/gh21_modified_files.png);
+}
+
+.card:nth-of-type(23) .card-img-top {
+	background-image: url(../img/modals/gh22_git_add_dot.png);
+}
+
+.card:nth-of-type(24) .card-img-top {
+	background-image: url(../img/modals/gh23_updated_commit.png);
+}
+
+.card:nth-of-type(25) .card-img-top {
+	background-image: url(../img/modals/gh24_push_update.png);
+}
+
+.card:nth-of-type(26) .card-img-top {
+	background-image: url(../img/github_logo.png);
+}
+
+/* modal styling */
+
+.modal-content {
+	background-color: transparent;
+	background-position: 50%;
+	background-size: inherit;
+	background-repeat: no-repeat;
+}
+
+.modal-image {
+	width: 100%;
+	box-shadow: 0px 0px 10px 10px rgba(25,25,25,0.25);
+}
+
+/* smooth transitions */
+.main-content,
+#sidebar {
+	transition: width 1s, height 1s;
+}
+
+/* fixed sidebar */
+.list-group {
+	margin-top: 70px;
+	position: fixed;
+	width: 40%;
+}
+
+/* remove list item margin */
+.list-item {
+	margin-left: 0;
+}
+
+/* cool terminal code effects */
+code {
+	background: rgba(0,0,0,0.8);
+	color: lime;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	word-break: break-all;
+}
+
+/* Github button styling */
+.gh-green-button {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+	background-color: #60b044;
+	background-image: linear-gradient(#8add6d, #60b044);
+	border-color: #5ca941;
+}
+
+.gh-dropdown {
+	background-color: #eee;
+	vertical-align: middle;
+	background-image: linear-gradient(#fcfcfc, #eee);
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+
+.gh-dropdown-blue {
+	background-color: #4078c0;
+	color: #fff;
+	padding-left: 24px;
+}
+
+/* animation */
+.fa-spinner {
+	/* doesn't work */
+	transition: animation 1s;
+}
+
+/* modified styling */
+.red {
+	background: black;
+	color: red;
+	padding: 2px 5px;
+}
+
+
+/* card focus styling */
+.card {
+	transition: background 0.75s, color 0.75s;
+	padding-top: 2rem;
+}
+.card:target {
+	background: rgba(2,90,165,1);
+	color: white;
+	transition: background 0.75s, color 0.75s;
+}
+.card:target a {
+	color: yellow;
+}
+.card:target .modalButton {
+	background: #f0ad4e;
+	transition: background 0.5s;
+}
+.card:target .modalButton:hover {
+	background: firebrick;
+}
+/* checkbox transition */
+.sidebar_checkbox {
+	transition: background 1s;
+}
+/* cool progbar */
+progress::-webkit-progress-bar {
+	background-color: #000023;
+	border-radius: 0px 0px 10px 10px;
+	background-color: clear;
+	border: 1px solid #f0ad4e;
+	box-shadow: inset 10px 10px 21px rgba(240,240,240,0.1);
+}
+
+progress::-webkit-progress-value {
+	background: #d3e2dc;
+	background: linear-gradient(to bottom, #d3e2dc 1%,#cde8dd 49%,#d3e2dc 100%);
+	background: -moz-linear-gradient(top, #d3e2dc 1%, #cde8dd 49%, #d3e2dc 100%);
+	background: -webkit-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+	background: -o-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+	background: -ms-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+	border-radius: 10px;
+	transition: width 1s linear;
+}
+
+/* next button styles */
+.card:target a.nextStyles,
+.nextStyles:visited {
+	color: white;
+}
+
+.card:target a.nextStyles:hover,
+.card:target a.nextStyles:focus {
+	color: #efefef;
+}
+
+.card:target a.nextStyles:active {
+	color: #fefefe;
+}
+
+/* sweet action button with flexbox! */
+.flex-container {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+/* better than pull-left an pull-right */
+.flex-justified {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+/* flex card */
+.flex-card {
+	/* gives equal widths to flex-cards */
+	-webkit-box-flex: initial;
+	-webkit-flex-grow: initial;
+	    -ms-flex-positive: initial;
+	        flex-grow: initial;
+	-webkit-flex: initial;
+	/* makes all flex-cards have the same height */
+	-webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+}
+
+.flex-card-wide {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	-webkit-flex: 1;
+}
+/* SUPPORTING horizontally centers content */
+.flex-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+/* SUPPORTING pushes or "floats" flex items to the right */
+.flex-end {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+/** SUPPORTING for flexcard **/
+/**** vertically pushes flex item to bottom ****/
+.flex-card-v-bottom {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+}
+
+/* media queries for sidebar */
+/* bootstrap auto queries */
+/* bottom button words */
+
+@media screen and (max-width: 560px) {
+	.top-button {
+		content: '<i class="fa fa-chevron-up"></i>';
+	}
+	.reset-button {
+		content: '<i class="fa fa-refresh"></i>';
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.card:nth-child(3n+4) {
+		clear: left;
+	}	
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.card:nth-child(2n+3) {
+		clear: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.list-group {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.button-container .btn-lg {
+		padding: .25rem .75rem;
+		font-size: .875rem;
+		line-height: 1.5;
+		border-radius: .3rem;
+	}
+}

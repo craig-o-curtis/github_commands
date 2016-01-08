@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Git commands in the terminal">
+    <meta name="author" content="Craig O. Curtis">
+    <link rel="icon" href="img/favicons/github.ico">
+
+    <title>Github Commands</title>
+
+    <!-- normalize.css -->
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- animate.css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-github">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.github.com/craig-o-curtis">craig-o-curtis</a>
+        <ul class="nav navbar-nav">
+          <!-- toggle nav -->
+            <a class="pull-xs-right hidden-md-up">
+              <i type="button" class="fa fa-lg fa-chevron-right btn-lg toggle-nav" data-toggle="offcanvas"></i>
+            </a>
+        </ul>
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-md-9 col-lg-12 main-content">
+<!--           <p class="pull-xs-right hidden-sm-up">
+            <button type="button" class="btn btn-primary btn-sm toggle-nav" data-toggle="offcanvas">Toggle nav</button>
+          </p> -->
+          <div class="jumbotron jumbotron-title">
+            <h1>
+              <p class="mainTitle">Github Commands</p>            
+              <div class="mainButtons">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+            </h1>
+            <p>Github basics in the terminal!</p>
+            <a href="#card1">
+            <button type="button" class="btn btn-primary btn-lg mainButton">Start a Project Page</button></a>
+            <button type="button" class="btn btn-warning">Make a User Page</button>
+          </div>
+          <!-- collapse example -->
+          <div class="row collapse" id="collapseModules">
+            <!-- card1 -->
+            <div id="card1" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step1modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 1</h4>
+                <p class="card-text">Make sure you have a project ready and your own <a href="http://www.github.com" target="_blank">Github account</a> and you've installed the Git commands when you install <a href="https://desktop.github.com/" target="_blank">Github Desktop</a></p>
+                
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step1modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card2" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step1modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="download github desktop and command line tools at https://desktop.github.com"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card2 -->
+            <div id="card2" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step2modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 2</h4>
+                <p class="card-text">Locate the file path with <code>ls</code> and <code>cd</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step2modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card3" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step2modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="find project folder path with ls and cd in the command line terminal"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card3 -->
+            <div id="card3" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step3modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 3</h4>
+                <p class="card-text">Make sure your project's main file is "index.html" with <code>ls</code> otherwise you'll get an error later on!
+                </p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step3modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card4" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step3modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="use ls to make sure your main html file is labeled index.html"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card4 -->
+            <div id="card4" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step4modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 4</h4>
+                <p class="card-text">Once in the directory, type <code>git init</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step4modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card5" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step4modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git init"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card5 -->
+            <div id="card5" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step5modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 5</h4>
+                <p class="card-text">Run the command <code>git status</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step5modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card6" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step5modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git status"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card6 -->
+            <div id="card6" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step6modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 6</h4>
+                <p class="card-text">Now enter <code>git add .</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step6modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card7" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step6modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git add ."/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card7 -->
+            <div id="card7" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step7modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 7</h4>
+                <p class="card-text">Run <code>git status</code> again to see the files tracked and staged</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step7modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card8" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step7modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git status"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card8 -->
+            <div id="card8" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step8modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 8</h4>
+                <p class="card-text">To commit to your local repository, use <code>git commit -m 'Initial commit'</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step8modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card9" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step8modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git commit -m 'Initial commit'"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card9 -->
+            <div id="card9" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step9modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 9</h4>
+                <p class="card-text">Go to your Github account and click the <button class="btn btn-sm gh-green-button"><i class="fa fa-plus"></i>&nbsp;New repository</button> button to create the remote repository.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step9modal" class="btn btn-primary  modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card10" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step9modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="click New Repository"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div>
+            <!-- card10 -->
+            <div id="card10" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step10modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 10</h4>
+                <p class="card-text">Enter the <strong>Repository Name</strong> in the <br><input type="text" placeholder="input box"/> and give it a description.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step10modal" class="btn btn-primary  modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card11" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step10modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="enter repository name and description"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card end -->
+            <!-- card11 -->
+            <div id="card11" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step11modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 11</h4>
+                <p class="card-text">Leave the <input type="checkbox" checked name="public" id="public">&nbsp;<label for="public">Public</label>&nbsp;checked and click <button class="btn btn-sm gh-green-button">Create repository</button></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step11modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card12" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step11modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="Check the Public option and click Create Repository"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card end -->
+            <!-- card12 -->
+            <div id="card12" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step12modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 12</h4>
+                <p class="card-text">Push an existing repository from the command line by copying and pasting the commands shown on the page first.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step12modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card13" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step12modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="copy and paste the code from Github"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card12 end -->
+            <!-- card13 -->
+            <div id="card13" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step13modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 13</h4>
+                <p class="card-text">Paste the commands in the terminal, or enter them.<br>
+                Example:<code>git remote add origin https://github.com/craig-o-curtis/html_video.git<br>
+                git push -u origin master</code> and hit enter.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step13modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card14" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step13modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="copy code from Github and paste it in the command line"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card13 end -->
+            <!-- card14 -->
+            <div id="card14" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step14modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 14</h4>
+                <p class="card-text">Back on the Github site, click on the repository <a disabled>link</a> of your newly-pushed project.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step14modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card15" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step14modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="click link of newly-published project"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card14 end -->
+            <!-- card15 -->
+            <div id="card15" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step15modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 15</h4>
+                <p class="card-text">Now you should see your project on the Github website.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step15modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card16" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step15modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="view project on your Github account"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card15 end -->
+            <!-- card16 -->
+            <div id="card16" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step16modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 16</h4>
+                <p class="card-text">In the terminal, create a new branch by entering <code>git checkout -b gh-pages</code></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step16modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card17" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step16modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git checkout -b gh-pages"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card16 end -->
+            <!-- card17 -->
+            <div id="card17" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step17modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 17</h4>
+                <p class="card-text">Run the command <code>git branch</code> and check the files are there by entering the <code>ls</code> command.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step17modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card18" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step17modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git branch and ls"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card17 end -->
+            <!-- card18 -->
+            <div id="card18" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step18modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 18</h4>
+                <p class="card-text">Push the new branch to Github by entering <code>git push origin gh-pages</code>.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step18modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card19" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step18modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git push origin gh-pages"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card18 end -->
+            <!-- card19 -->
+            <div id="card19" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step19modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 19</h4>
+                <p class="card-text"><i class="fa fa-refresh"></i>&nbsp;Refresh your GIthub page, click on the <button class="btn btn-sm gh-dropdown">Branch: <strong>master&nbsp;<i class="fa fa-caret-down"></i></strong></button> and you should see the dropdown:
+                  <p class="btn-primary gh-dropdown-blue">gh-pages</p>
+                </p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step19modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card20" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step19modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="click on the gh-pages branch"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card19 end -->
+            <!-- card20 -->
+            <div id="card20" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step20modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 20</h4>
+                <p class="card-text">Your site is now being build by github.io, and this process takes no longer than 10 minutes. Check out your site at username.github.io/project_name.<br>
+                Example: <a href="https://craig-o-curtis.github.io/html_video" target="_blank">craig-o-curtis.github.io/html_video</a></p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step20modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card21" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step20modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="go to your username.github.io/project_name"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card20 end -->
+            <!-- card21 -->
+            <div id="card21" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step21modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 21</h4>
+                <p class="card-text">To update changes to your gh-pages, make sure you're in the gh-pages branch with <code>git branch</code>, and use <code>git checkout gh-pages</code> to go to the gh-pages branch.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step21modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card22" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step21modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git branch to see, git checkout master to go to master"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card21 end -->
+            <!-- card22 -->
+            <div id="card22" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step22modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 22</h4>
+                <p class="card-text">Run <code>git status</code> to see the <span class="red">modified:</span> files on your computer.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step22modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card23" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step22modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git status"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card22 end -->
+            <!-- card23 -->
+            <div id="card23" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step23modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 23</h4>
+                <p class="card-text">Add the updates to the staging area with the <code>git add .</code> command.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step23modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card24" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step23modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git add ." />
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card23 end -->
+            <!-- card24 -->
+            <div id="card24" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step24modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 24</h4>
+                <p class="card-text">Commit your updates to the staging area with <code>git commit -m "updated"</code>.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step24modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card25" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step24modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git commit -m "updated""/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card24 end -->
+            <!-- card25 -->
+            <div id="card25" class="card col-md-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step25modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 25</h4>
+                <p class="card-text">Finally, push to git pages<code>git push origin gh-pages</code>.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step25modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#card26" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Next</a></button>
+                <!-- modal begin -->
+                <div id="step25modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="git push origin gh-pages"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card25 end -->
+            <!-- card26 -->
+            <div id="card26" class="card col-sm-6 col-lg-4">
+              <img class="card-img-top" data-toggle="modal" data-target="#step26modal" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Step 26</h4>
+                <p class="card-text">Remember, you can also push your master branch and repeat steps to update that first and then the gh-pages branch.</p>
+                <!-- modal button -->
+                <button data-toggle="modal" data-target="#step26modal" class="btn btn-primary modalButton"><i class="fa fa-desktop"></i>&nbsp;Screenshot</button>
+                <button class="nextCard btn-success"><a href="#" class="nextStyles"><i class="fa fa-chevron-down"></i>&nbsp;Complete!</a></button>
+                <!-- modal begin -->
+                <div id="step26modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="" class="image modal-image" data-dismiss="modal" aria-label="Close" alt="Github logo"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end -->
+              </div>
+            </div> <!-- card26 end -->
+          </div><!--/row-->
+        </div><!--/span-->
+        <!-- mock sidebar -->
+        <!-- mock sidebar -->
+        <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <!-- sidebar checkbox1 -->
+            <div class="static">
+              <h3 type="button" class="btn btn-sm sidebar-checkbox">PROGRESS</h3><br>
+            <progress id="progbar" class="progress" value="0" max=""></progress>
+            </div>
+            <div class="button-container">
+              <a type="button" href="#card1" class="btn btn-lg btn-block btn-primary sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">01</i>
+              </a>
+              <!-- sidebar checkbox2 -->
+              <a type="button" href="#card2" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">02</i>
+              </a>
+              <!-- sidebar checkbox3 -->
+              <a type="button" href="#card3" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">03</i>
+              </a>
+              <!-- sidebar checkbox4 -->
+              <a type="button" href="#card4" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">04</i>
+              </a>
+              <!-- sidebar checkbox5 -->
+              <a type="button" href="#card5" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">05</i>
+              </a>
+              <!-- sidebar checkbox6 -->
+              <a type="button" href="#card6" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">06</i>
+              </a>
+              <!-- sidebar checkbox7 -->
+              <a type="button" href="#card7" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">07</i>
+              </a>
+              <!-- sidebar checkbox8 -->
+              <a type="button" href="#card8" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">08</i>
+              </a>
+              <!-- sidebar checkbox9 -->
+              <a type="button" href="#card9" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">09</i>
+              </a>
+              <!-- sidebar checkbox10 -->
+              <a type="button" href="#card10" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">10</i>
+              </a>
+              <!-- sidebar checkbox11 -->
+              <a type="button" href="#card11" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">11</i>
+              </a>
+              <!-- sidebar checkbox12 -->
+              <a type="button" href="#card12" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">12</i>
+              </a>
+              <!-- sidebar checkbox13 -->
+              <a type="button" href="#card13" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">13</i>
+              </a>
+              <!-- sidebar checkbox14 -->
+              <a type="button" href="#card14" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">14</i>
+              </a>
+              <!-- sidebar checkbox15 -->
+              <a type="button" href="#card15" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">15</i>
+              </a>
+              <!-- sidebar checkbox16 -->
+              <a type="button" href="#card16" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">16</i>
+              </a>
+              <!-- sidebar checkbox17 -->
+              <a type="button" href="#card17" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">17</i>
+              </a>
+              <!-- sidebar checkbox18 -->
+              <a type="button" href="#card18" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">18</i>
+              </a>
+              <!-- sidebar checkbox19 -->
+              <a type="button" href="#card19" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">19</i>
+              </a>
+              <!-- sidebar checkbox20 -->
+              <a type="button" href="#card20" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">20</i>
+              </a>
+              <!-- sidebar checkbox21 -->
+              <a type="button" href="#card21" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">21</i>
+              </a>
+              <!-- sidebar checkbox22 -->
+              <a type="button" href="#card22" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">22</i>
+              </a>
+              <!-- sidebar checkbox23 -->
+              <a type="button" href="#card23" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">23</i>
+              </a>
+              <!-- sidebar checkbox24 -->
+              <a type="button" href="#card24" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">24</i>
+              </a>
+              <!-- sidebar checkbox25 -->
+              <a type="button" href="#card25" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">25</i>
+              </a>
+              <!-- sidebar checkbox26 -->
+              <a type="button" href="#card26" class="btn btn-lg btn-block sidebar_checkbox">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x opaque"></i>
+                </span>
+                <i class="button-content">26</i>
+              </a>
+            </div> <!-- button container -->
+            <div class="finished">
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer class="navbar navbar-fixed-bottom flex-container flex-justified">
+        <div class="flex-card-wide flex-card-v-bottom">
+          <p class="flex-card-v-bottom">&copy; Craig O. Curtis 20XX</p>
+        </div>
+        <div class="flex-card-wide "><!-- need to center -->
+          <div class="flex-container flex-center action-buttons">
+            <button id="actionDesktop"type="button" class="flex-card-wide btn btn-lg btn-secondary actionDesktop" data-target="" data-toggle="modal" ><i class="fa fa-desktop"></i></button>
+            <a href="#card2"<button id="actionNext" type="button" class="flex-card-wide btn btn-lg btn-secondary actionNext"><i class="fa fa-chevron-down"></i></button></a>
+          </div>
+        </div>
+        <div class="flex-card-wide">
+          <div class="flex-container flex-end">
+            <!-- back to top -->
+            <a href="#"><button type="button" class="btn btn-md btn-default"><i class="fa fa-chevron-up"></i>&nbsp;Top</button></a>
+            <!-- reset -->
+            <button type="button" class="btn btn-md btn-warning reset-button pull-right"><i class="fa fa-refresh"></i>&nbsp;Reset</button>
+          </div>
+        </div>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <!-- china blocks this -->
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    -->
+    <!-- china blocks this -->
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/myscripts.js"></script>
+  </body>
+</html>
