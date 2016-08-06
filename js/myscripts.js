@@ -1,4 +1,4 @@
-/* myscripts.js */
+/* myscripts.js - Github Pages console Commands */
 
 $(document).ready(function(){
 	var $sidebarCheckbox = $('.sidebar_checkbox');
@@ -36,7 +36,7 @@ $(document).ready(function(){
 	$nav.slideUp(10);
 	$jumbo.slideDown(1000);
 	$nav.slideDown(1100);
-	/* sweet entry over */
+	/* sweet entry  */
 	$sideBar.hide();
 	$toggleNav.hide();
 	$collapseModules.hide();
@@ -56,17 +56,19 @@ $(document).ready(function(){
 	$sideBarButton.on('click', function(){
 		if ( $('#sidebar').css('display') === "none" ) {
 			$sideBar.delay(400).show(1000);
-		} else {
-			$sideBar.hide(250);
-		}
+		} 
+		// else {
+		// 	$sideBar.hide(250);
+		// }
 		$actionButtons.slideDown(1200);
 		$toggleNav.show(1200);
 		$collapseModules.fadeIn(1000);
 		if ($mainContent.hasClass('col-lg-12')) {
 			$mainContent.removeClass('col-lg-12')
-		} else {
-			$mainContent.addClass('col-lg-12')
-		}
+		} 
+		// else {
+		// 	$mainContent.addClass('col-lg-12')
+		// }
 		/* show first lesson */
 		$('#card1').slideDown(1500);
 		
@@ -204,7 +206,7 @@ $(document).ready(function(){
 		$sidebarCheckbox.first().addClass('btn-primary');
 		$card.slideUp();
 		$sidebarCheckbox.first().slideDown();
-		$actionButtons.slideUp();
+		// $actionButtons.slideUp();
 	});
 
 });
